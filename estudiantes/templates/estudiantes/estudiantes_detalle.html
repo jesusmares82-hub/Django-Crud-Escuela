@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca</title>
+</head>
+<body>
+<div class="container">
+<h1 class="mt-4">👤 Estudiante a detalle:</h1>
+    {%if estudiante%}
+        <h2>Autor Id: {{estudiante.id}}</h2>
+        <h2>Nombre: {{estudiante.nombre}}</h2>
+        <h2>Edad: {{estudiante.edad}}</h2>
+        <h2>Email: {{estudiante.email}}</h2>
+        <h2>Fecha Nacimiento: {{estudiante.fecha_nacimiento}}</h2>
+    {% else %}
+        <h2>No existe ese estudiante! ☠️</h2>
+    {% endif %}
+</div>
+</body>
+</html>
